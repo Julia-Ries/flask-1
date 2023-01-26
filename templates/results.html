@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title%} Results {% endblock %}
+
+{% block content%}
+
+<h1>
+    {{ input_symbol}}&nbsp;{{amount}}
+</h1>
+<h2>({{input_name}})</h2>
+
+<h1 class="display-2" id="result">{{output_symbol}}&nbsp;{{converted}}</h1>
+
+            <h2 class="display-4">({{output_name}})</h2>
+<form action="/">
+    <button type="submit" class="btn btn-cyan btn-lg btn-block">Back To Home</button>
+            </form>
+
+{% endblock %}
